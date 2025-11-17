@@ -1,0 +1,48 @@
+1. Team Project Proposal
+Title: Job Application Personality Preference App.
+
+Our purpose: The purpose of this software is for users to get matched with the job that best fits their personality when given a list of key attributes and tendencies they knsow about themselves. Job preferences would be matched based on the kind of information that is given to use from the user based on three main categories: Qualifications, Personality Preferences and Work Environment Indicators. Furthermore, this application will be used to help applications streamline their research procoess for the kind of job they personally are inteested in seeking after not just for tangible benefit but also intangible understanding of who they are. 
+
+Target Users: 
+- Recent College graduates - From Bachelors to Doctorate. 
+- Applicants seeking enry-level/junior level positions. 
+- Senior level experienced applications who are seeking a change of pace in their careers or seek to understand themselves better through our survey.
+-*Disclaimer*: We don't take into account age, gender or race for our survey. We are most interested in these demographics of people, because they are the largest demographic of people who are seeking to get into the job-market and get a job/go into their career field. Objectively speaking then they are the most likely candidates who will be interested in using our job application personality application. 
+
+Value Proposition:
+Our purpose ties into the problem of understanding's one's fit in a job market where cultural representation or expression may not be the first priority. However, since where personal and culture fit in an organization matters just as much(if not more) than a job description or set of responsibilities, our application will help deduce who has the best qualifications, personaltiy, and fit for the role. Our API that we used is based on AI-matchmaking capabilities with a survey to determine who are the most compatable and deserving applicants to get selected for a job that best matches who they are as a person, just as much as who they are a seasoned professional/emerging professional. 
+
+Our core features for or Minimum Viable Product (MVP) include[but are not limited to]: 
+  - Gathering user feedback using our API survey feedback tool to gather critical information from our users who take our survey job application personality test. 
+  - Using KPI indicators within our information feedback system to inform us of how many aplicants have taken our surveys and gained their final compatability score/result.      
+  - Implement an authentication system that determines the users, first name, last name, phone number and wmail address so recruiters can directly contact them if they are highly qualified and personality compatable for the job. 
+  - Implement a verified email system set up so we can confirm their identity. 
+  - Allow users to access the shared google formed within our API by them accessing their email for official use(this is so also that we know they aren't bots) . 
+  - Request essential customer feedback to know how to proceed[if this were to proceed to a phase 2 after MVP]. 
+  - Application may include to understand users mindset/preference based on their browser history with ethical considerations noted.
+  - Posted survey link to the homepage of our website. 
+
+                                                              
+                                                                                                                                          Ethical AI/Data Statement: 
+ - Any and all data used or given by our users within our personality survey and recruitment application, is used with discretion, and full-awarness to our team that any information that is given will never be shared, sold or given to anyone else based on the fact that it is personally identifiable information, sensitive personal information and/or information that belongs to a a shared group or family. We understand that you have emplaced your trust in us to securly protected your data, and it is our duty to make sure that no person, entity or organization looks, steals or unlawfully uses yourdata that is shared using our outsourced API and our website. 
+ - Please also see the data privacy usage of Open AI and how it manage its practices about data privacy, which is used in conjunction with our job application personality survey used on our website. 
+                                                                                                                                                                                                
+Select one external API or dataset to enhance your system: 
+ - The external API we are using is with Open AI, using ChatGPT-5 as our source our job application personality survey for our job matcher application. 
+
+System Decomposition 
+Define 3–5 major modules/components (e.g., Auth, Dashboard, Tasks): 
+  1. Authentication Board: 
+  - User and Role Management(for accounts)
+  - Profile system for new and preexisting users. 
+  2. Dashboard 
+  - Admin/Team dashboard for basic/essential website analytics.
+  3. Tasks
+  - i.e. Review Candidate Match Profile
+  4. ATS - Applicant Tracking System
+  - Along with using personality assessment/survey.
+  - With a scoring/trail-mapping system(e.g. Big Five Personality Traits, individual traits etc.)
+  5. Job Posting Module and Matching Algorithm(from survey results to output: e.g. fit score, and recommended roles for applicants)
+
+AI Usage Log (Appendix listing tools, prompts, and purpose):
+
