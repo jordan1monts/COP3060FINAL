@@ -28,7 +28,7 @@ Our core features for or Minimum Viable Product (MVP) include[but are not limite
  - Please also see the data privacy usage of Open AI and how it manage its practices about data privacy, which is used in conjunction with our job application personality survey used on our website. 
                                                                                                                                                                                                 
 Select one external API or dataset to enhance your system: 
- - The external API we are using is with Open AI, using ChatGPT-5 as our source our job application personality survey for our job matcher application. 
+ - The external API we are using is with Open AI, using ChatGPT as our source our job application personality survey for our job matcher application. 
 
 System Decomposition 
 Define 3–5 major modules/components (e.g., Auth, Dashboard, Tasks): 
