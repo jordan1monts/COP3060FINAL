@@ -1,0 +1,5 @@
+com\example\jobsuggestions\model\SuggestionRequest.class
+com\example\jobsuggestions\controller\SuggestionController.class
+com\example\jobsuggestions\service\SuggestionService.class
+com\example\jobsuggestions\JobSuggestionsApplication.class
+com\example\jobsuggestions\model\Suggestion.class
