@@ -192,14 +192,26 @@ backend/
 
 ## 📝 AI Usage Log
 
-### Date: [Add Date]
-**AI Tool:** [Tool Name]
-**Prompt Summary:** [Description]
-**Purpose:** [Purpose]
+### Date: November 24, 2025
+**AI Tool:** ChatGPT
+**Prompt Summary:** Error Handling
+**Purpose:** Fixing errors within our code, so that we could properly run our prpgram
 
 ### Summary of AI Use:
-AI tools were used for [describe usage]. All code was manually reviewed and understood.
+AI tools were used for when our backend ran fine, but our front end did not. So we were able to trouble
+-shoot those issues using AI.
 
 ### Ethical Reflection:
-AI assistance was used responsibly. All code was reviewed and modified as needed.
+AI assistance was used responsibly to solve minor issues in getting our frontend to properly display.
+
+### Date: November 24,2025
+**AI Tool:** ChatGPT
+**Prompt Summary:** Documentation Assistance
+**Purpose:** Our initial Milestone 1 documentation was not the best, so we wanted to make it more organized, clear, and professional
+
+### Summary of AI Use:
+AI tools were used for making our documentation easier to understand.
+
+### Ethical Reflection:
+AI assistance was used responsibly used to make our ideas more clear to those who did not work on the project.
 
