@@ -164,13 +164,19 @@ backend/
 ```
 
 ## API Endpoint Table
+Method          Route                     Action
+------------------------------------------------------------------------------
+
+Get    | /api/suggestions      | Get all job suggestions
 
 ------------------------------------------------------------------------------
-Get    | /api/suggestions      | Get all job suggestions
-------------------------------------------------------------------------------
+
 Post   | /api/suggestions      | Create a new job suggestion
+
 ------------------------------------------------------------------------------
+
 Delete | /api/suggestions/(id) | Delete a job suggestions
+
 ------------------------------------------------------------------------------
 
 
