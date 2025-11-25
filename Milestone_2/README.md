@@ -23,14 +23,6 @@ This is a job application sugestion application. It demonstrates a functional pr
 
 ```
 
-### Key Differences from Advanced Version
-
-- **No React Router** - Uses simple state-based page switching in App.js
-- **Simple fetch()** - No Axios library, uses native fetch API
-- **Basic Components** - Simpler component structure
-- **Straightforward Backend** - Basic controller/service/model pattern
-
-## Running the Application
 
 ### Prerequisites
 
