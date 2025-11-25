@@ -4,22 +4,23 @@
 
 This is a job application sugestion application. It demonstrates a functional prototype linking a ReactJS frontend and Spring Boot backend using REST endpoints.
 
-### Simple Architecture
+### Simple Architecture Diagram
 
 ```
-Frontend (React)
-    ↓
-App.js (Conditional Rendering - No Router)
-    ↓
-Components (Home, DataDisplay, FormPage)
-    ↓
-fetch() API calls
-    ↓
-Backend (Spring Boot)
-    ↓
-Controller → Service → Model
-    ↓
-In-Memory Storage (HashMap)
++------------------+        HTTP Requests       +---------------------------+
+|     ReactJS      | -------------------------> |      Spring Boot API      |
+|  (Frontend UI)   | <------------------------- |     /api/suggestions      |
++------------------+      JSON Responses        +---------------------------+
+          |
+          | State-based Navigation (useState)
+          v
++---------------------+
+| Components:         |
+| - Home              |
+| - DataDisplay       |
+| - FormPage          |
++---------------------+
+
 ```
 
 ### Key Differences from Advanced Version
