@@ -1,6 +1,6 @@
 # Milestone 2 Simple – Prototype: Frontend + Backend Foundations
 
-## 📋 Overview
+##  Overview
 
 This is a job application sugestion application. It demonstrates a functional prototype linking a ReactJS frontend and Spring Boot backend using REST endpoints.
 
@@ -29,7 +29,7 @@ In-Memory Storage (HashMap)
 - **Basic Components** - Simpler component structure
 - **Straightforward Backend** - Basic controller/service/model pattern
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Prerequisites
 
@@ -105,20 +105,20 @@ In-Memory Storage (HashMap)
 ## ✨ Features
 
 ### Frontend
-- ✅ Three pages (Home, Data Display, Form)
-- ✅ Simple state-based navigation (no React Router)
-- ✅ useState for state management
-- ✅ fetch() for API calls
-- ✅ Basic styling
+-  Three pages (Home, Data Display, Form)
+-  Simple state-based navigation (no React Router)
+-  useState for state management
+-  fetch() for API calls
+-  Basic styling
 
 ### Backend
-- ✅ REST API endpoints (GET, POST, PUT, DELETE)
-- ✅ Controller → Service → Model structure
-- ✅ In-memory storage (HashMap)
-- ✅ HTTP status codes
-- ✅ JSON responses
+-  REST API endpoints (GET, POST, PUT, DELETE)
+-  Controller → Service → Model structure
+-  In-memory storage (HashMap)
+-  HTTP status codes
+-  JSON responses
 
-## 📝 Adding New Pages
+##  Adding New Pages
 
 To add a new page to the application:
 
