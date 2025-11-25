@@ -42,53 +42,25 @@ This is a job application sugestion application. It demonstrates a functional pr
 
 #### Step 1: Start the Backend Server
 
-1. **Open a terminal/command prompt**
-
-2. **Navigate to the backend directory:**
-   ```bash
-   cd "Milestone_2"
+   ```
+   cd Milestone_2
    cd backend
-   ```
-
-3. **Install Maven dependencies:**
-   ```bash
    mvn clean install
-   ```
-   - Wait for "BUILD SUCCESS"
-
-4. **Start the Spring Boot server:**
-   ```bash
    mvn spring-boot:run
    ```
-      - Wait for "(process running for X.XXX)"
-
-5. **Wait for the server to start:**
-   - Look for: `http://localhost:8080`
-   - Should show "Whitelabel Error Page"
-   - **Keep this terminal open!**
 
 #### Step 2: Start the Frontend Server
 
-1. **Open a NEW terminal** (keep backend running!)
+ **Open a NEW terminal** 
 
-2. **Navigate to the frontend directory:**
-   ```bash
+
+   ```
+   cd Milestone_2
    cd frontend
-   ```
-
-3. **Install npm dependencies:**
-   ```bash
    npm install
-   ```
-
-4. **Start the development server:**
-   ```bash
    npm run dev
+   
    ```
-
-5. **Wait for the server to start:**
-   - Look for: `Local: http://localhost:5173/`
-   - **Keep this terminal open!**
 
 #### Step 3: Use the Application
 
