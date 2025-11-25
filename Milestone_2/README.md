@@ -102,7 +102,7 @@ In-Memory Storage (HashMap)
    - Click "Data Display" → See your submissions
    - Click "Home" → View overview
 
-## ✨ Features
+## Features
 
 ### Frontend
 -  Three pages (Home, Data Display, Form)
@@ -161,7 +161,7 @@ To add a new page to the application:
    </button>
    ```
 
-## 🔧 Code Structure
+## Code Structure
 
 ### Frontend Structure
 ```
@@ -190,28 +190,40 @@ backend/
 │   └── JobSuggestionsApplication.java
 ```
 
-## 📝 AI Usage Log
 
-### Date: November 24, 2025
+
+## AI Usage Log
+**Project Information:**
+- Course: COP 3060 – Full Stack Web Development
+- Milestone #: 2
+- Team Name: Group X
+- Team Members: Caleb Parker, Clemenceau Senatus, Jamal Person, Jordan Monts
+- Date Submitted: November 25,2025
+-------------------------------------------------------------------------------------------------------------------------------------------
+**Date:** November 24, 2025
 **AI Tool:** ChatGPT
 **Prompt Summary:** Error Handling
-**Purpose:** Fixing errors within our code, so that we could properly run our prpgram
+**Purpose:** Fixing errors within our code, so that we could properly run our program.
+**Output used but modified**
+**Human Revision:** Removed irrelevant lines that AI suggested and tested how code would work in different parts of program.
+**Ethical Reflection:** Used responsibly to resolve errors without replacing our own coding work, only modifying it if neccesary.
 
-### Summary of AI Use:
-AI tools were used for when our backend ran fine, but our front end did not. So we were able to trouble
--shoot those issues using AI.
-
-### Ethical Reflection:
-AI assistance was used responsibly to solve minor issues in getting our frontend to properly display.
-
-### Date: November 24,2025
+-------------------------------------------------------------------------------------------------------------------------------------------
+**Date:** November 24, 2025
 **AI Tool:** ChatGPT
-**Prompt Summary:** Documentation Assistance
-**Purpose:** Our initial Milestone 1 documentation was not the best, so we wanted to make it more organized, clear, and professional
+**Prompt Summary:** Notation/Documentation/Formatting Assistance
+**Purpose:** To make our ideas, methods, and how to run our program more clear to those who did not work on the project.
+**Output used but modified**
+**Human Revision:** Reformatted notation, documentation, and formatting based on AI suggestions.
+**Ethical Reflection:** Used ethically to improve readability and understanding of our work and documentation.
 
-### Summary of AI Use:
-AI tools were used for making our documentation easier to understand.
+-------------------------------------------------------------------------------------------------------------------------------------------
 
-### Ethical Reflection:
-AI assistance was used responsibly used to make our ideas more clear to those who did not work on the project.
 
+Summary of AI Use: AI tools were used to assist with debugging, documentation clarity, and front and backend integration troubleshooting.
+Most of the usage focused on identifying frontend bugs causing it not to display properly, reformatting our README, and improving clarity in our project explanations and comments. 
+
+Ethical Reflection: We used AI responsibily throughout this milestone as a copilot/support system when we ran into bugs and wanted to display our work in a way that's understandable to more than just those who worked on it. The majority of our usage dealt with understanding the  issue at hand, rather than looking for a quick fix solution. The outputs that we did use have modified to better fit our project.
+
+Verification Statement: By signing, we confirm all AI usage has been logged accurately and ethically.
+Group Signatures: Caleb Parker, Clemenceau Senatus, Jamal Person, Jordan Monts
