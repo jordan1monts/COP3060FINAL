@@ -163,6 +163,15 @@ backend/
 │   └── JobSuggestionsApplication.java
 ```
 
+## API Endpoint Table
+
+------------------------------------------------------------------------------
+Get    | /api/suggestions      | Get all job suggestions
+------------------------------------------------------------------------------
+Post   | /api/suggestions      | Create a new job suggestion
+------------------------------------------------------------------------------
+Delete | /api/suggestions/(id) | Delete a job suggestions
+------------------------------------------------------------------------------
 
 
 ## AI Usage Log
