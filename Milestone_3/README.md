@@ -1,6 +1,6 @@
 # Milestone 3 Simple – Database + External API + Authentication
 
-## 📋 Overview
+## Overview
 
 This is Milestone 3. It adds database persistence, basic external API integration, and simple authentication using session-based approach (simpler than JWT).
 
@@ -8,6 +8,13 @@ This is Milestone 3. It adds database persistence, basic external API integratio
 **Entity Relationships:**
 - **User** (1) ──< (Many) **Suggestion**: One user can have many suggestions
 - **Suggestion** (1) ──< (Many) **suggestion_answers**: One suggestion has many answer key-value pairs (stored as `@ElementCollection`)
+## Entity Relationships Diagram
+```
+JobProfile (1) ──< (Many) Applicant
+Applicant (1) ──< (Many) Response
+Question (1) ──< (Many) Response
+Response (1) ──< (1) AnalysisReport
+```
 
 **Key Fields:**
 - `User.id`: Primary key, auto-generated
@@ -16,7 +23,7 @@ This is Milestone 3. It adds database persistence, basic external API integratio
 - `Suggestion.user_id`: Foreign key to User
 - `Suggestion.external_api_data`: Stores JSON response from external API
 
-## 🔌 External API Integration
+## External API Integration
 
 - **API Used**: OpenAI ChatGPT API via OpenRouter (`https://openrouter.ai/api/v1`)
 - **Model**: `openai/gpt-3.5-turbo` (ChatGPT)
@@ -101,7 +108,26 @@ npm run dev
 
 Frontend runs on `http://localhost:5173`
 
-#### Step 3: Use Application
+#### Step 3: Database (Automatic - No Setup Needed!)
+
+The application uses an embedded database (H2) that requires **zero setup**:
+
+- **No SQL files to run** - Tables are created automatically
+- **No database server to install** - Everything runs inside the app
+- **No configuration needed** - Just start the backend and it works!
+
+**How it works:**
+1. Start the backend → Database and tables are created automatically
+2. Use the app → Data is saved automatically
+3. View data → Open `http://localhost:8080/h2-console` in your browser
+   - JDBC URL: `jdbc:h2:file:./jobsuggestionsdb`
+   - Username: `sa`
+   - Password: (leave empty)
+   - Click "Connect" and run: `SELECT * FROM users;` or `SELECT * FROM suggestions;`
+
+**Database file location:** `backend/jobsuggestionsdb.mv.db` (created automatically, contains all your data)
+
+#### Step 4: Use Application
 
 1. Register a new user
 2. Login
@@ -238,6 +264,7 @@ GET /api/suggestions
   "error": "Authentication required"
 }
 ```
+
 
 
 ## AI Usage Log

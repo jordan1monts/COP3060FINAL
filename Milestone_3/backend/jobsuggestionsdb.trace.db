@@ -1,0 +1,15 @@
+2025-12-02 12:48:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2025-12-02 12:48:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2025-12-02 12:50:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]`SELECT * FROM users"; SQL statement:
+`SELECT * FROM users [42000-214]
+2025-12-02 12:50:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]` or `SELECT * FROM suggestions"; SQL statement:
+` or `SELECT * FROM suggestions [42000-214]
+2025-12-02 12:50:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]`"; SQL statement:
+` [42000-214]
+2025-12-02 12:56:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]

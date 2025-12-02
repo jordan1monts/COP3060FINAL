@@ -1,0 +1,554 @@
+{
+  "info": {
+    "name": "Job Apps Database API - Milestone 3",
+    "_postman_id": "job-apps-api-collection",
+    "description": "API collection for Job Application Management System with authentication",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Register User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"testuser\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/auth/register",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "auth", "register"]
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"testuser\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/auth/login",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "auth", "login"]
+            }
+          }
+        },
+        {
+          "name": "Get Current User",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/auth/me",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "auth", "me"]
+            }
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "http://localhost:8080/api/auth/logout",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "auth", "logout"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Job Profiles",
+      "item": [
+        {
+          "name": "Get All Job Profiles",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/job-profiles",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "job-profiles"]
+            }
+          }
+        },
+        {
+          "name": "Get Job Profile by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/job-profiles/J001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "job-profiles", "J001"]
+            }
+          }
+        },
+        {
+          "name": "Create Job Profile",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"jobProfileId\": \"J010\",\n  \"title\": \"Full Stack Developer\",\n  \"description\": \"Develop web applications using modern technologies\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/job-profiles",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "job-profiles"]
+            }
+          }
+        },
+        {
+          "name": "Update Job Profile",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Senior Full Stack Developer\",\n  \"description\": \"Lead development of web applications\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/job-profiles/J001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "job-profiles", "J001"]
+            }
+          }
+        },
+        {
+          "name": "Delete Job Profile",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8080/api/job-profiles/J010",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "job-profiles", "J010"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Applicants",
+      "item": [
+        {
+          "name": "Get All Applicants",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/applicants",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "applicants"]
+            }
+          }
+        },
+        {
+          "name": "Get Applicant by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/applicants/A001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "applicants", "A001"]
+            }
+          }
+        },
+        {
+          "name": "Create Applicant",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"applicantId\": \"A010\",\n  \"name\": \"Test User\",\n  \"email\": \"test@example.com\",\n  \"jobProfile\": {\n    \"jobProfileId\": \"J001\"\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/applicants",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "applicants"]
+            }
+          }
+        },
+        {
+          "name": "Update Applicant",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Updated Name\",\n  \"email\": \"updated@example.com\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/applicants/A001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "applicants", "A001"]
+            }
+          }
+        },
+        {
+          "name": "Delete Applicant",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8080/api/applicants/A010",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "applicants", "A010"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Questions",
+      "item": [
+        {
+          "name": "Get All Questions",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/questions",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "questions"]
+            }
+          }
+        },
+        {
+          "name": "Get Question by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/questions/Q001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "questions", "Q001"]
+            }
+          }
+        },
+        {
+          "name": "Create Question",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"questionId\": \"Q010\",\n  \"text\": \"What is your experience with Spring Boot?\",\n  \"type\": \"Technical\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/questions",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "questions"]
+            }
+          }
+        },
+        {
+          "name": "Update Question",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"text\": \"Updated question text\",\n  \"type\": \"Behavioral\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/questions/Q001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "questions", "Q001"]
+            }
+          }
+        },
+        {
+          "name": "Delete Question",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8080/api/questions/Q010",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "questions", "Q010"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Responses",
+      "item": [
+        {
+          "name": "Get All Responses",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/responses",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "responses"]
+            }
+          }
+        },
+        {
+          "name": "Get Response by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/responses/R001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "responses", "R001"]
+            }
+          }
+        },
+        {
+          "name": "Create Response",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"responseId\": \"R020\",\n  \"answer\": \"My answer here\",\n  \"responseDate\": \"2024-04-01\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/responses?applicantId=A001&questionId=Q002",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "responses"],
+              "query": [
+                {
+                  "key": "applicantId",
+                  "value": "A001"
+                },
+                {
+                  "key": "questionId",
+                  "value": "Q002"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Update Response",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"answer\": \"Updated answer\",\n  \"responseDate\": \"2024-04-02\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/responses/R001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "responses", "R001"]
+            }
+          }
+        },
+        {
+          "name": "Delete Response",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8080/api/responses/R020",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "responses", "R020"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Analysis Reports",
+      "item": [
+        {
+          "name": "Get All Reports",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/reports",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "reports"]
+            }
+          }
+        },
+        {
+          "name": "Get Report by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/reports/RP001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "reports", "RP001"]
+            }
+          }
+        },
+        {
+          "name": "Create Analysis Report",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"reportId\": \"RP020\",\n  \"generatedDate\": \"2024-04-01\",\n  \"summary\": \"Strong candidate with excellent technical skills\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/reports?responseId=R001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "reports"],
+              "query": [
+                {
+                  "key": "responseId",
+                  "value": "R001"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Update Report",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"summary\": \"Updated summary\",\n  \"generatedDate\": \"2024-04-02\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/reports/RP001",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "reports", "RP001"]
+            }
+          }
+        },
+        {
+          "name": "Delete Report",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8080/api/reports/RP020",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "reports", "RP020"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+
