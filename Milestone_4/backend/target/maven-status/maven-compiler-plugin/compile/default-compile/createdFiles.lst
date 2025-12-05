@@ -1,0 +1,17 @@
+com\example\jobsuggestions\config\SecurityConfig$1.class
+com\example\jobsuggestions\config\ApplicationSecurityBeans.class
+com\example\jobsuggestions\config\SecurityConfig.class
+com\example\jobsuggestions\model\User.class
+com\example\jobsuggestions\controller\AuthController.class
+com\example\jobsuggestions\JobSuggestionsApplication.class
+com\example\jobsuggestions\model\Suggestion.class
+com\example\jobsuggestions\model\SuggestionRequest.class
+com\example\jobsuggestions\repository\SuggestionRepository.class
+com\example\jobsuggestions\config\UserDetailsConfig.class
+com\example\jobsuggestions\config\UserDetailsConfig$1.class
+com\example\jobsuggestions\model\UserRequest.class
+com\example\jobsuggestions\controller\SuggestionController.class
+com\example\jobsuggestions\repository\UserRepository.class
+com\example\jobsuggestions\service\SuggestionService.class
+com\example\jobsuggestions\service\UserService.class
+com\example\jobsuggestions\model\SuggestionId.class

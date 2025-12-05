@@ -1,0 +1,3 @@
+com\example\jobsuggestions\service\SuggestionServiceTest.class
+com\example\jobsuggestions\controller\SuggestionControllerTest.class
+com\example\jobsuggestions\controller\AuthControllerTest.class
