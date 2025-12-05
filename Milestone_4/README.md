@@ -93,7 +93,7 @@ The application supports using your own API key via environment variable to avoi
 #### Step 1: Start Backend
 
 ```bash
-cd Milestone_4/backend
+cd backend
 mvn clean install
 mvn spring-boot:run
 ```
@@ -157,40 +157,6 @@ The /api/suggestions/{id} DELETE endpoint removes a suggestion using its ID.
 **Note:** All `/api/suggestions/*` endpoints require authentication. Users can only access their own suggestions.
 
 ## Example API Responses
-
-### Register User
-**Request:**
-```json
-POST /api/auth/register
-{
-  "username": "john_doe",
-  "password": "password123"
-}
-```
-
-**Response:**
-```json
-{
-  "message": "User registered successfully"
-}
-```
-
-### Login
-**Request:**
-```json
-POST /api/auth/login
-{
-  "username": "john_doe",
-  "password": "password123"
-}
-```
-
-**Response:**
-```json
-{
-  "message": "Login successful"
-}
-```
 
 ### Create Suggestion
 **Request:**
@@ -264,35 +230,35 @@ GET /api/suggestions
 }
 ```
 
-## 🧪 Automated Testing
+## Automated Testing
 
 ### Backend Tests (JUnit)
 
 **Test Files:**
-- ✅ `SuggestionServiceTest.java` - Tests service layer (6 tests)
-- ✅ `SuggestionControllerTest.java` - Tests REST endpoints (4 tests)
-- ✅ `AuthControllerTest.java` - Tests authentication endpoints (3 tests)
+- `SuggestionServiceTest.java` - Tests service layer (6 tests)
+- `SuggestionControllerTest.java` - Tests REST endpoints (4 tests)
+- `AuthControllerTest.java` - Tests authentication endpoints (3 tests)
 
 **Test Coverage:**
-- ✅ **CRUD Operations:**
+- **CRUD Operations:**
   - `testGetAllSuggestions_EmptyList` - Tests getting empty list (Read)
   - `testGetSuggestionById` - Tests retrieving by ID (Read)
   - `testCreateSuggestion` - Tests creating a suggestion (Create)
   - `testUpdateSuggestion` - Tests updating a suggestion (Update)
   - `testDeleteSuggestion` - Tests deletion (Delete)
-- ✅ **REST Endpoints:**
+- **REST Endpoints:**
   - `testGetAllSuggestions` (Controller) - Tests GET endpoint
   - `testCreateSuggestion` (Controller) - Tests POST endpoint
   - `testUpdateSuggestion` (Controller) - Tests PUT endpoint
   - `testDeleteSuggestion` (Controller) - Tests DELETE endpoint
-- ✅ **Authenticated Routes:**
+- **Authenticated Routes:**
   - `testLogin_Success` - Tests successful login authentication
   - `testLogin_InvalidCredentials` - Tests authentication failure
   - `testRegister_Success` - Tests user registration
 
 **Running Backend Tests:**
 ```bash
-cd Milestone_4/backend
+cd backend
 mvn clean install
 ```
 
@@ -306,24 +272,24 @@ Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
 - **Service Layer:** 6 tests (CRUD operations with repository)
 - **Controller Layer:** 4 tests (REST endpoints with session handling)
 - **Authentication:** 3 tests (login, register, invalid credentials)
-- **CRUD Coverage:** ✅ Create, Read, Update, Delete all tested
-- **Authenticated Routes:** ✅ Login endpoint tested (authentication required)
+- **CRUD Coverage:** Create, Read, Update, Delete all tested
+- **Authenticated Routes:** Login endpoint tested (authentication required)
 
 ### Frontend Tests (Jest)
 
 **Test Files:**
-- ✅ `Home.test.js` - Tests Home component (2 tests)
-- ✅ `DataDisplay.test.js` - Tests data fetching (3 tests)
-- ✅ `FormPage.test.js` - Tests form submission (3 tests)
+- `Home.test.js` - Tests Home component (2 tests)
+- `DataDisplay.test.js` - Tests data fetching (3 tests)
+- `FormPage.test.js` - Tests form submission (3 tests)
 
 **Test Coverage:**
-- ✅ `renders form fields` - Verifies form inputs
-- ✅ `submits form with data` - Tests form submission
-- ✅ `displays error on failure` - Tests error handling
-- ✅ `fetches and displays data` - Tests data retrieval
-- ✅ `displays empty state` - Tests empty state
-- ✅ `displays error on fetch failure` - Tests error handling
-- ✅ `renders home page content` - Tests Home component
+- `renders form fields` - Verifies form inputs
+- `submits form with data` - Tests form submission
+- `displays error on failure` - Tests error handling
+- `fetches and displays data` - Tests data retrieval
+- `displays empty state` - Tests empty state
+- `displays error on fetch failure` - Tests error handling
+- `renders home page content` - Tests Home component
 
 **Running Frontend Tests:**
 ```bash
@@ -357,11 +323,11 @@ Tests:       8 passed, 8 total
 - Database Query Time: < 50ms - **58% improvement**
 
 **Optimization Techniques Applied:**
-1. ✅ Implemented database query optimization (indexed queries)
-2. ✅ Added response caching for frequently accessed data
-3. ✅ Optimized React component rendering (memoization)
-4. ✅ Reduced bundle size through code splitting
-5. ✅ **API Key Configuration Feature (Milestone 2 → 3):** Added support for custom API keys via environment variable to prevent quota/usage limit errors. Users can now set their own `OPENROUTER_API_KEY` environment variable, allowing the application to continue functioning even when the default API key reaches its usage limit. This improvement significantly reduces downtime and improves reliability when the external API service experiences high load or quota restrictions.
+1. Implemented database query optimization (indexed queries)
+2. Added response caching for frequently accessed data
+3. Optimized React component rendering (memoization)
+4. Reduced bundle size through code splitting
+5. **API Key Configuration Feature (Milestone 2 → 3):** Added support for custom API keys via environment variable to prevent quota/usage limit errors. Users can now set their own `OPENROUTER_API_KEY` environment variable, allowing the application to continue functioning even when the default API key reaches its usage limit.
 
 ### Usability Testing
 
@@ -380,16 +346,16 @@ Tests:       8 passed, 8 total
 4. **Error Messages:** Helpful and clear error messages improved user experience
 
 **Improvements Identified and Implemented:**
-1. ✅ Added loading indicators for better UX during API calls
-2. ✅ Improved error messages for clarity and actionability
-3. ✅ Added form validation feedback (real-time validation)
-4. ✅ Enhanced responsive design for mobile devices
-5. ✅ Added success confirmation messages after form submission
-6. ✅ **API Key Management:** Implemented environment variable support for API keys to handle usage limits gracefully (see "External API Integration" section above)
-7. ✅ **Comprehensive Accessibility Features:** Added 15+ accessibility features to improve usability for all users (see "Accessibility & Ethics" section below)
-8. ✅ **Database Session Management:** Switched from file-based to in-memory H2 database to ensure IDs start from 1 for each session and data resets on backend restart, preventing confusion from accumulated IDs across multiple sessions
-9. ✅ **Collapsible Accessibility Panel:** Made the accessibility options sidebar collapsible to reduce screen clutter and improve content visibility, with user preference saved in localStorage
-10. ✅ **User-Specific Database IDs:** Implemented composite primary key `(user_id, entry_number)` so that database IDs are user-specific rather than global. Each user's suggestions now have their own ID sequence starting from 1 (1, 2, 3, etc. per user). This means User 1's suggestions will have IDs (1,1), (1,2), (1,3)... and User 2's suggestions will have IDs (2,1), (2,2), (2,3)... where the first number is the user_id and the second is the entry_number. The entry number is calculated by counting existing suggestions for that user and adding 1, then stored as part of the composite primary key. This makes it much easier to search for specific suggestions in the H2 database using user_id and entry_number, and ensures each user's entries are numbered starting from 1 in the database itself.
+1. Added loading indicators for better UX during API calls
+2. Improved error messages for clarity and actionability
+3. Added form validation feedback (real-time validation)
+4. Enhanced responsive design for mobile devices
+5. Added success confirmation messages after form submission
+6. **API Key Management:** Implemented environment variable support for API keys to handle usage limits gracefully (see "External API Integration" section above)
+7. **Comprehensive Accessibility Features:** Added 15+ accessibility features to improve usability for all users (see "Accessibility & Ethics" section below)
+8. **Database Session Management:** Switched from file-based to in-memory H2 database to ensure IDs start from 1 for each session and data resets on backend restart, preventing confusion from accumulated IDs across multiple sessions
+9. **Collapsible Accessibility Panel:** Made the accessibility options sidebar collapsible to reduce screen clutter and improve content visibility, with user preference saved in localStorage
+10. **User-Specific Database IDs:** Implemented composite primary key `(user_id, entry_number)` so that database IDs are user-specific rather than global. 
 
 **Evidence of Improvements:**
 - User satisfaction score increased from 3.2/5 to 4.5/5
@@ -401,125 +367,37 @@ Tests:       8 passed, 8 total
 ### Accessibility Features Implemented
 
 This application includes comprehensive accessibility features to ensure it is usable by all users, including those with disabilities. The following features have been implemented:
-
-#### 1. Adjustable Text Size
-- ✅ Users can select from 4 text size options: Small, Medium, Large, and Extra Large
-- ✅ Text size preference is saved in localStorage and persists across sessions
-- ✅ All text elements (headings, body text, buttons) scale proportionally
-- ✅ Accessible via the Accessibility Controls panel
-
-#### 2. High-Contrast Mode
-- ✅ Toggleable high-contrast mode for improved visibility
-- ✅ Meets WCAG contrast guidelines (4.5:1 minimum ratio)
-- ✅ High-contrast mode affects all UI elements (text, buttons, borders, backgrounds)
-- ✅ Preference saved in localStorage
-
-#### 3. Screen Reader Compatibility
-- ✅ Full support for screen readers (NVDA, JAWS, VoiceOver)
-- ✅ Comprehensive ARIA labels on all interactive elements
-- ✅ Semantic HTML structure (header, nav, main, article, section)
-- ✅ ARIA live regions for dynamic content updates
-- ✅ Descriptive labels for all form elements
-- ✅ Proper heading hierarchy (h1, h2, h3)
-
-#### 4. Text-to-Speech (Read Aloud)
-- ✅ Read aloud buttons (🔊) next to text content throughout the application
-- ✅ Users can click the button to hear specific text read aloud
-- ✅ Available for headings, instructions, form field labels, error messages, and data content
-- ✅ Uses Web Speech Synthesis API for text-to-speech
-- ✅ Button changes to stop (⏹️) icon when speaking
-- ✅ Users have full control over when to use the feature
-
-#### 5. Keyboard Navigation
-- ✅ Full keyboard navigation support (Tab, Shift+Tab, Enter, Space, Arrow keys)
-- ✅ All interactive elements are keyboard accessible
-- ✅ Visible focus indicators (3px solid outline) on all focusable elements
-- ✅ Logical tab order throughout the application
-- ✅ Keyboard shortcuts for common actions
-
-#### 6. Large Click/Tap Targets
-- ✅ All buttons and interactive elements meet minimum 44x44px size requirement
-- ✅ Adequate spacing between interactive elements
-- ✅ Touch-friendly design for mobile devices
-- ✅ Improved usability for users with motor impairments
-
-#### 7. Simple, Clear Language
-- ✅ Plain language used in all instructions
-- ✅ Concise, direct sentences
-- ✅ Clear explanations of form requirements
-- ✅ No technical jargon without explanation
-
-#### 8. Read Aloud Buttons
-- ✅ Read aloud (🔊) button next to text content throughout the application
-- ✅ Users can click the button to hear specific text read aloud
-- ✅ Available next to headings, instructions, form field labels, error messages, and data content
-- ✅ Button changes to stop (⏹️) icon when speaking
-- ✅ Uses Web Speech Synthesis API for text-to-speech
-- ✅ Particularly helpful for users with reading difficulties, visual impairments, or those who prefer auditory information
-- ✅ Users have full control over when to use the feature
-
-#### 9. Predictable Layout and Navigation
-- ✅ Consistent structure across all pages
-- ✅ Same navigation pattern throughout the application
-- ✅ Predictable placement of menus, headers, and action buttons
-- ✅ Reduces cognitive load for all users
-
-#### 10. Descriptive Error Messages
-- ✅ Clear, specific error messages that explain:
-  - What went wrong
-  - Which field(s) have issues
-  - How to fix the problem
-- ✅ Example: "Please fill in the following required fields: Work History, Skills" instead of "Error: invalid input"
-- ✅ Error messages are announced to screen readers via ARIA live regions
-
-#### 11. Form Field Assistance
-- ✅ Placeholder text with examples for each field
-- ✅ Helper text below each field explaining what to enter
-- ✅ Tooltips and descriptions for complex fields
-- ✅ Clear indication of required vs. optional fields
-- ✅ Helps all users understand form requirements
-
-#### 12. No Flashing Animations
-- ✅ No rapidly flashing or blinking content
-- ✅ Smooth, subtle animations only
-- ✅ Respects user preferences for reduced motion
-- ✅ Safe for users with photosensitivity
-
-#### 13. Consistent Iconography and Visual Cues
-- ✅ Recognizable icons with text labels
-- ✅ Consistent icon behavior throughout the app
-- ✅ Icons support text labels (not icon-only buttons)
-- ✅ Helps users with cognitive disabilities understand interface
-
-#### 14. Accessible Color Palette
-- ✅ WCAG AA compliant color contrast (4.5:1 minimum)
-- ✅ Color is not the only means of conveying information
-- ✅ Text and icons reinforce color-coded information
-- ✅ High-contrast mode available for additional contrast
-
-#### 15. Additional Accessibility Features
-- ✅ Screen reader-only content (`.sr-only` class) for additional context
-- ✅ Proper use of ARIA roles (main, navigation, region, status, alert)
-- ✅ ARIA live regions for dynamic content (polite and assertive)
-- ✅ Proper use of `<time>` elements for dates
-- ✅ Accessible data tables and lists
-- ✅ Skip links for keyboard navigation (where applicable)
+- 1. Adjustable Text Size
+- 2. High-Contrast Mode
+- 3. Screen Reader Compatibility
+- 4. Text-to-Speech (Read Aloud)
+- 5. Keyboard Navigation
+- 6. Large Click/Tap Targets
+- 7. Simple, Clear Language
+- 8. Read Aloud Buttons
+- 9. Predictable Layout and Navigation
+- 10. Descriptive Error Messages
+- 1. Form Field Assistance
+- 12. No Flashing Animations
+- 13. Consistent Iconography and Visual Cues
+- 14. Accessible Color Palette
+- 15. Additional Accessibility Features
 
 ### Accessibility Checklist
 
 **WCAG Compliance:**
-- ✅ **Color Contrast:** WCAG AA compliant (4.5:1 ratio verified using WebAIM Contrast Checker)
+- **Color Contrast:** WCAG AA compliant (4.5:1 ratio verified using WebAIM Contrast Checker)
   - Primary text: #333333 on #FFFFFF (12.6:1 ratio)
   - Secondary text: #666666 on #FFFFFF (7.0:1 ratio)
   - Links: #0066CC on #FFFFFF (4.8:1 ratio)
   - High-contrast mode: Black on white (21:1 ratio)
-- ✅ **Alt Text:** All images include descriptive alt text (no decorative images without alt attributes)
-- ✅ **Keyboard Navigation:** All interactive elements accessible via keyboard (Tab, Enter, Space, Arrow keys)
-- ✅ **Screen Reader:** Compatible with screen readers (tested with NVDA, JAWS, VoiceOver)
-- ✅ **Focus Indicators:** Clear focus states for all interactive elements (3px solid outline with offset)
-- ✅ **Form Labels:** All form inputs have associated labels using `<label>` elements
-- ✅ **ARIA Labels:** Comprehensive ARIA labels for dynamic content, error messages, and interactive elements
-- ✅ **Semantic HTML:** Proper use of semantic HTML elements (header, nav, main, article, section, form, button, time)
+- **Alt Text:** All images include descriptive alt text (no decorative images without alt attributes)
+- **Keyboard Navigation:** All interactive elements accessible via keyboard (Tab, Enter, Space, Arrow keys)
+- **Screen Reader:** Compatible with screen readers (tested with NVDA, JAWS, VoiceOver)
+- **Focus Indicators:** Clear focus states for all interactive elements (3px solid outline with offset)
+- **Form Labels:** All form inputs have associated labels using `<label>` elements
+- **ARIA Labels:** Comprehensive ARIA labels for dynamic content, error messages, and interactive elements
+- **Semantic HTML:** Proper use of semantic HTML elements (header, nav, main, article, section, form, button, time)
 
 **Accessibility Testing:**
 - Tested with keyboard-only navigation
@@ -530,39 +408,38 @@ This application includes comprehensive accessibility features to ensure it is u
 ### Ethical Considerations
 
 **Data Handling:**
-- ✅ User data is handled securely
-- ✅ No sensitive data stored in client-side storage unnecessarily
-- ✅ Clear data usage policies
+- User data is handled securely
+- No sensitive data stored in client-side storage unnecessarily
+- Clear data usage policies
 
 **AI Usage:**
-- ✅ Transparent about AI usage in job recommendations
-- ✅ User consent required for data processing
-- ✅ No demographic bias in recommendations (unless explicitly opted-in)
+- Transparent about AI usage in job recommendations
+- No demographic bias in recommendations (unless explicitly opted-in)
 
 **Privacy:**
-- ✅ Users can control their data
-- ✅ Clear privacy policy
-- ✅ No unnecessary data collection
+- Users can control their data
+- Clear privacy policy
+- No unnecessary data collection
 
 ## 🔧 Security Improvements
 
 Based on reference implementation best practices from ContactList project:
 
 1. **Improved SecurityConfig:**
-   - ✅ Configurable CORS with `@Value` annotation
-   - ✅ Cleaner filter chain setup
-   - ✅ Better separation of concerns
-   - ✅ Improved security headers configuration
+   - Configurable CORS with `@Value` annotation
+   - Cleaner filter chain setup
+   - Better separation of concerns
+   - Improved security headers configuration
 
 2. **Enhanced Auth Controller:**
-   - ✅ Uses `AuthenticationManager` for proper Spring Security authentication flow
-   - ✅ Better error handling with `AuthenticationException`
-   - ✅ Cleaner response format using `Map.of()`
+   - Uses `AuthenticationManager` for proper Spring Security authentication flow
+   - Better error handling with `AuthenticationException`
+   - Cleaner response format using `Map.of()`
 
 3. **Better Configuration Structure:**
-   - ✅ Added `UserDetailsConfig` for centralized `UserDetailsService` configuration
-   - ✅ Added `ApplicationSecurityBeans` for `AuthenticationManager` bean configuration
-   - ✅ Improved separation of concerns with dedicated configuration classes
+   - Added `UserDetailsConfig` for centralized `UserDetailsService` configuration
+   - Added `ApplicationSecurityBeans` for `AuthenticationManager` bean configuration
+   - Improved separation of concerns with dedicated configuration classes
 
 **Benefits:**
 - More secure authentication flow using Spring Security's built-in mechanisms
