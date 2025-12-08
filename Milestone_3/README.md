@@ -90,7 +90,7 @@ The application supports using your own API key via environment variable to avoi
 #### Step 1: Start Backend
 
 ```bash
-cd milestone-3-simple/backend
+cd backend
 mvn clean install
 mvn spring-boot:run
 ```
@@ -101,7 +101,7 @@ Backend runs on `http://localhost:8080`
 #### Step 2: Start Frontend
 
 ```bash
-cd milestone-3-simple/frontend
+cd frontend
 npm install
 npm run dev
 ```
