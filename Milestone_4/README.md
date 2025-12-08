@@ -103,7 +103,7 @@ Backend runs on `http://localhost:8080`
 #### Step 2: Start Frontend
 
 ```bash
-cd Milestone_4/frontend
+cd frontend
 npm install
 npm run dev
 ```
