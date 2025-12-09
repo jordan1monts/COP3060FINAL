@@ -1,0 +1,55 @@
+Overview of architecture and features.
+Simple Architecture
+Frontend (React)
+    ↓
+App.js (Conditional Rendering - No Router)
+    ↓
+Components (Home, DataDisplay, FormPage)
+    ↓
+fetch() API calls
+    ↓
+Backend (Spring Boot)
+    ↓
+Controller → Service → Model
+    ↓
+In-Memory Storage (HashMap)
+
+
+Testing Process:
+
+Each participant completed the survey form
+Tested navigation between pages
+Evaluated error handling and feedback
+Assessed mobile responsiveness
+Key Findings:
+
+Navigation: Users found the navigation intuitive and straightforward
+Form Submission: Clear feedback on success/error states was appreciated
+Data Display: Easy to read and understand job suggestions
+Error Messages: Helpful and clear error messages improved user experience
+
+Future Improvements:
+
+Team roles and acknowledgments.
+Clemenceau Senatus: API intergration, Backend and Frontend Connectivity
+Caleb Parker: Database Intergration, Project Proposal, Supporting Documents
+Jordan Monts: Documentation, Testing and Evaluation, AI Usage Log
+Jamal Person: Entity Relation Diagram, Assisted with documentation 
+
+AI Usage Log (Appendix required):
+## AI Usage Log
+
+**Date:** [Add Date]
+
+**AI Tool Used:** 
+
+**Purpose:**
+- 
+
+**Specific Assistance:**
+- 
+
+**Time Saved:** [Estimate if applicable]
+
+**Learning Outcomes:**
+- 
