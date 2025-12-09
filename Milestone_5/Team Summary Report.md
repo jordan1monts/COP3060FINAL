@@ -3,7 +3,7 @@
 **Project:** Job Suggestions Application  
 **Course:** COP3060  
 **Team Members:** Clemenceau Senatus, Caleb Parker, Jordan Monts, Jamal Person
-**Date:** [Date]
+**Date:** 12/9/2025
 
 ---
 
