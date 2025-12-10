@@ -157,3 +157,41 @@ Regarding personal future plans, I hope to gain a role in cybersecurity, so that
 Overall Reflection
 This project was extremely helpful in allowing me to learn how to work as a team, on new projects I’ve never done before, and be cautious of when and how I use AI within my project.
 
+---
+# Individual Reflections
+
+**Name:**Jamal Person
+**Date:** 12/9/2025
+**Course:** COP3060
+**Project:** Job Suggestions Application
+
+---
+1. Personal Contributions
+
+My personal contribution to this project was creating the entity relationship diagram, which shows the flow of data through our application. I have also helped create the documentation for milestones, which involves checking documents for errors and ensuring proper organization. This helped establish the foundation of our application and created a wireframe for how data should flow into it.
+I helped present the data in the application during the demo video that shows how our application and how it interacts with each other. 
+
+2. Technical Growth
+
+This helped improve my organizational skills for group projects and interacting with people in this type of assignment. I can narrow down what needs to be included in the data variables and how the relations between the variables are. The project helped me develop my critical thinking skills in solving problems related to the project’s needs. 
+A significant improvement I made during this project is understanding how data flows through an application’s program. I can see how specific aspects interact with the data servers and how they interact with each other to get the results to the user. They will provide the user with proper data and display it according to the person’s preferences.
+The improvements I should make are to understand the coding aspects of the project and how to create it from scratch for future use. This is necessary because I need to understand how to achieve efficient results for the application properly.
+
+3. Teamwork Reflection
+
+My team did well in managing the project, and we performed our roles with good efficiency. We meet through Zoom at times that work for us to discuss our plans, roles, and complete our tasks to meet the requirements. The only downside is our conflicting schedules, which cause us to do a lot of last-minute work.
+
+4. Ethical Considerations
+
+My only ethical consideration is trying not to rely too heavily on AI for the project, as it could yield results that do not align with our application’s goals. It could lead to us having no control over the application, and since we barely created it ourselves using AI, we should limit its use as much as possible.
+
+5. Future Plans
+
+I plan to understand the code better so I can comprehend how the program processes the input data and generates the outputs. This project will enable us to work in fields of IT and software engineering that involve this type of data manipulation.
+My goal is to enhance this skill to secure a role in data analytics, enabling me to produce results based on the given data. This goal will require critical thinking and organizational skills that need to be improved upon to achieve it.
+
+6. Overall Reflection
+
+My goal is to enhance this skill to secure a role in data analytics, enabling me to produce results based on the given data. This goal will require critical thinking and organizational skills that need to be improved upon to achieve it.
+
+---
