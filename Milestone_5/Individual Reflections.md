@@ -122,4 +122,38 @@ Overall the project was fluid, and while there were some parts that were difficu
 
 ---
 
+**Name:** Jordan Monts 
+**Date:** 12/9/2025  
+**Course:** COP3060  
+**Project:** Job Suggestions Application
+
+Personal Contributions
+A majority of my work went into documentation, and one of my favorite things to do was write the AI usage logs. It seemed very tedious at first, but then I began to see just how important it was to track how and when you are using these tools as a team.
+Another major part of my role was doing the testing the front and back end of our web application. When writing the backend JUnit test I focused on stress testing CRUD and authentication capabilities . When Jest testing the front end with I mainly wanted to automate our program and see if it would consistently display the api results correctly and could make sure the forms that the user would interact with would be displayed properly. 
+
+ Technical Growth
+React, Spring Boot, etc were all new to me this semester. But there are two major skills I’ve learned from this project: that’s its possible to implement APIs into any type of project and then testing my application. Forever I always thought you needed some exclusive access or high end hardware to implement an API into your program, so I always strayed away from it. Working on this project showed me that you can build almost anything as long as you have the patience and right directions.  With regards to testing, that was completely new and that seems like something I should have been doing for a while, but moving forward I will b because it’s extremely important.
+
+Challenges Overcome
+A major challenge that I put onto myself was to not use AI tools as much especially since we had to document for each use case, because when I run into a bug it’s sometimes just too simple to copy and paste my error to find a solution to it without understanding it.
+I solved this issue by looking at resources first before using AI for example. My professor did a similar style project in class, so if I was receiving an error regarding a certain module I would reference theirs to see where I may have made a mistake. If I exhausted all my resources, then I would look into using AI tools to assist me.
+What I learned from this is that there are always resources out there, and it almost teaches you to remember how to resolve certain errors just to avoid having to search the web for the same troubleshooting guide over and over again. So my overall understanding of errors improved from working on this.
+
+
+Areas for Improvement
+An area I think I could most definitely improve on is timeliness. I always get what I need to complete done, but I sometimes like to work on my own schedule. If I am working solo then it isn't a big issue, but when working in groups its always important to get group work done first and then from there you can do whatever with your personal work and time.
+
+Teamwork Reflection
+I feel like my team did an amazing job, but I do feel like communication could have been better, but that was probably due to us having wildly different schedules. I enjoyed seeing how our team came together on major things like deciding roles and minor things like who will say what in demo videos or who would submit it. There wasn’t a time wen a member was left out.
+
+ Ethical Considerations
+As I stated previously we only used AI as a last resort and for things that didn’t take away from our experience like commenting and organizing our work. But we are using and AI API within our application and we had to consider things that may skew our API’s outputs so we removed all unnecessary inputs from their such as: name, gender, race, and even location.
+
+  Future Plans
+Regarding our application specifically, a few future updates we could implement are better styling to make it look a bit more appealing and to include possible other questions to better curate results.
+Regarding personal future plans, I hope to gain a role in cybersecurity, so that was one of reasons behind me wanting to the testing and assist with the authorization. Testing your application for weaknesses before their discovered by bad actors do is highly important as long as making sure only authorized users have certain permissions.
+
+
+Overall Reflection
+This project was extremely helpful in allowing me to learn how to work as a team, on new projects I’ve never done before, and be cautious of when and how I use AI within my project.
 
